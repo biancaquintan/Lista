@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Lista</string>
+    <string name="title_activity_criar_lista">CriarLista</string>
+</resources>
