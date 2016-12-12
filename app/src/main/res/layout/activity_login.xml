@@ -11,32 +11,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="br.edu.iff.pooa20162.lista.Login">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cadastre-se para criar uma lista:" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_marginTop="36dp"
-        android:id="@+id/tUsuario"
-        android:layout_below="@+id/textView3"
-        android:layout_centerHorizontal="true"
-        android:hint="Usuário" />
-
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/tConfirma"
-        android:layout_below="@+id/tSenha"
+        android:hint="Confirme a senha"
+        android:layout_centerVertical="true"
         android:layout_alignStart="@+id/tSenha"
-        android:layout_marginTop="13dp"
-        android:hint="Confirme a senha" />
+        android:textSize="20sp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -45,9 +29,20 @@
         android:ems="10"
         android:id="@+id/tSenha"
         android:hint="Senha"
-        android:layout_below="@+id/tUsuario"
+        android:layout_above="@+id/tConfirma"
         android:layout_alignStart="@+id/tUsuario"
-        android:layout_marginTop="11dp" />
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/tUsuario"
+        android:hint="Usuário"
+        android:layout_above="@+id/tSenha"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
 
     <Button
         android:text="Entrar"
@@ -56,6 +51,14 @@
         android:id="@+id/bLogin"
         android:layout_below="@+id/tConfirma"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp" />
+        android:layout_marginTop="57dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastre-se para criar uma lista:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true" />
 
 </RelativeLayout>

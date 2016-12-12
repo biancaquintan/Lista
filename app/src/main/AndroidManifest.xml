@@ -15,10 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Horario" />
         <activity
-            android:name=".CriarLista"
-            android:label="@string/title_activity_criar_lista"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".Lista"
+            android:label="@string/title_activity_lista"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Atividade"></activity>
     </application>
 
 </manifest>

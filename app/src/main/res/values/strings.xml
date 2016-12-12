@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">Lista</string>
-    <string name="title_activity_criar_lista">CriarLista</string>
+    <string name="app_name">To Do</string>
+    <string name="title_activity_criar_lista">To Do</string>
+    <string name="title_activity_lista">O que temos para a semana?</string>
 </resources>
