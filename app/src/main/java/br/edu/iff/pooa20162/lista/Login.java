@@ -18,7 +18,6 @@ public class Login extends AppCompatActivity {
 
         final EditText tUsuario = (EditText) findViewById(R.id.tUsuario);
         final EditText tSenha = (EditText) findViewById(R.id.tSenha);
-        final EditText tConfirma = (EditText) findViewById(R.id.tConfirma);
 
 
         Button bLogin = (Button) findViewById(R.id.bLogin);
@@ -26,7 +25,17 @@ public class Login extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Login.this, Horario.class);
+                Intent intent = new Intent(Login.this, Lista.class);
+                startActivity(intent);
+            }
+        });
+
+        Button bElse = (Button) findViewById(R.id.bElse);
+        bElse.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Login.this, Cadastro.class);
                 startActivity(intent);
             }
         });

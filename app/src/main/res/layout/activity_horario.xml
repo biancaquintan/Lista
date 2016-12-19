@@ -11,11 +11,11 @@
     tools:context="br.edu.iff.pooa20162.lista.Horario">
 
     <TextView
-        android:text="Antes de começar, escolha o melhor horário para os avisos diários..."
+        android:text="Qual é o melhor horário para os avisos diários?"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txt4"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:textColor="@color/colorPrimary"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
@@ -25,7 +25,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/timePicker"
         android:layout_centerVertical="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:headerBackground="@color/verde" />
 
     <Button
         android:text="Ok"
@@ -35,7 +36,7 @@
         android:textSize="18sp"
         android:background="@color/verde"
         android:textColor="@android:color/background_light"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
 
 </RelativeLayout>

@@ -20,7 +20,8 @@
             android:name=".Lista"
             android:label="@string/title_activity_lista"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Atividade"></activity>
+        <activity android:name=".Atividade" />
+        <activity android:name=".Cadastro" />
     </application>
 
 </manifest>

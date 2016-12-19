@@ -14,13 +14,17 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
+        android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/tConfirma"
-        android:hint="Confirme a senha"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/tSenha"
-        android:textSize="20sp" />
+        android:id="@+id/tUsuario"
+        android:hint="Usuário"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="134dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColorLink="@color/verde" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -29,36 +33,35 @@
         android:ems="10"
         android:id="@+id/tSenha"
         android:hint="Senha"
-        android:layout_above="@+id/tConfirma"
+        android:textSize="20sp"
+        android:layout_below="@+id/tUsuario"
         android:layout_alignStart="@+id/tUsuario"
-        android:textSize="20sp" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/tUsuario"
-        android:hint="Usuário"
-        android:layout_above="@+id/tSenha"
-        android:layout_centerHorizontal="true"
-        android:textSize="20sp" />
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorLink="@color/verde" />
 
     <Button
         android:text="Entrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
         android:id="@+id/bLogin"
-        android:layout_below="@+id/tConfirma"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="57dp" />
+        android:textColor="@android:color/background_light"
+        android:background="@color/colorPrimary"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/tSenha"
+        android:layout_centerHorizontal="true" />
 
-    <TextView
+    <Button
+        android:text="Não tenho cadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cadastre-se para criar uma lista:"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="18sp"
-        android:layout_alignParentTop="true" />
+        android:id="@+id/bElse"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:textColor="@color/verde"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold" />
 
 </RelativeLayout>

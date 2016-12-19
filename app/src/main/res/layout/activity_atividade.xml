@@ -11,7 +11,7 @@
     tools:context="br.edu.iff.pooa20162.lista.Atividade">
 
     <TextView
-        android:text="Atividade: "
+        android:text="Título: "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -19,7 +19,7 @@
         android:layout_marginTop="14dp"
         android:id="@+id/tx5"
         android:textSize="20sp"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:textColor="?attr/colorControlNormal"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -29,16 +29,21 @@
         android:id="@+id/tAtividade"
         android:layout_alignTop="@+id/tx5"
         android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/tx5" />
+        android:layout_toEndOf="@+id/tx5"
+        android:textSize="18sp"
+        tools:textColorLink="@color/verde"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="viewStart"
+        android:textColorLink="@color/verde" />
 
     <TextView
-        android:text="Descrição:"
+        android:text="Descrição: "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tAtividade"
         android:layout_alignParentStart="true"
         android:layout_marginTop="29dp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="?attr/colorControlNormal"
         android:id="@+id/txt6"
         android:textSize="20sp" />
 
@@ -50,14 +55,18 @@
         android:layout_alignTop="@+id/txt6"
         android:id="@+id/tDesc"
         android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/txt6" />
+        android:layout_toEndOf="@+id/txt6"
+        tools:textColorLink="@color/verde"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="viewStart"
+        android:textColorLink="@color/verde" />
 
     <Button
         android:text="Adicionar atividade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/bAdcAtividade"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:background="@color/verde"
         android:textAlignment="center"
         android:layout_marginBottom="80dp"

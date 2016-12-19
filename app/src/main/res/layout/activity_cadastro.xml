@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cadastro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.edu.iff.pooa20162.lista.Cadastro">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="94dp"
+        android:id="@+id/editText"
+        android:hint="Usuário"
+        android:textColorLink="@color/verde"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:text="Insira os dados para criação de login:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView"
+        android:textColor="@color/verde"
+        android:textSize="18sp" />
+
+    <Button
+        android:text="Cadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bCadastrar"
+        android:textColor="@android:color/background_light"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_below="@+id/editText5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="25dp"
+        android:id="@+id/editText5"
+        android:hint="Confirme a senha"
+        android:layout_below="@+id/editText4"
+        android:layout_alignStart="@+id/editText4"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="27dp"
+        android:id="@+id/editText4"
+        android:hint="Senha"
+        android:layout_below="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:textColor="@color/colorPrimaryDark" />
+</RelativeLayout>

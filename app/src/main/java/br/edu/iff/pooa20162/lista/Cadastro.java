@@ -5,27 +5,24 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
-public class Horario extends AppCompatActivity {
+public class Cadastro extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_horario);
+        setContentView(R.layout.activity_cadastro);
 
         Intent intent = getIntent();
 
-
-        Button bOk = (Button) findViewById(R.id.bOk);
-        bOk.setOnClickListener(new View.OnClickListener() {
+        Button bCadastrar = (Button) findViewById(R.id.bCadastrar);
+        bCadastrar.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Horario.this, Lista.class);
+                Intent intent = new Intent(Cadastro.this, Horario.class);
                 startActivity(intent);
             }
         });
-
     }
 }

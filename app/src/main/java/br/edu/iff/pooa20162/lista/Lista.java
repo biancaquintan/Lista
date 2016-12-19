@@ -27,6 +27,15 @@ public class Lista extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        FloatingActionButton bHorario = (FloatingActionButton) findViewById(R.id.bHorario);
+        bHorario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Lista.this, Horario.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }
