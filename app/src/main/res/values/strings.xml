@@ -1,7 +1,12 @@
 <resources>
     <string name="app_name">To Do</string>
     <string name="title_activity_criar_lista">To Do</string>
-    <string name="title_activity_lista">To Do.. O que temos para a semana?</string>
+    <string name="title_activity_lista">O que temos para a semana?</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="action_settings">Settings</string>
+
+    <string name="button">Button</string>
+    <string name="textview">TextView</string>
+    <string name="salvar">Salvar</string>
+    <string name="descricao">Descricao</string>
 </resources>

@@ -7,21 +7,41 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Login">
+        android:theme="@style/AppTheme"
+        android:name="com.orm.SugarApp">
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="cadastrosDB.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="1" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="br.edu.iff.pooa20162.lista" />
+
+
+        <activity android:name=".Activity.Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Horario" />
+
+        <activity android:name=".Activity.Horario" />
+
         <activity
-            android:name=".Lista"
+            android:name=".Activity.Lista"
             android:label="@string/title_activity_lista"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Atividade" />
-        <activity android:name=".Cadastro" />
+
+        <activity android:name=".Activity.TelaAtividade" />
+
+        <activity android:name=".Activity.Cadastro" />
     </application>
 
 </manifest>
