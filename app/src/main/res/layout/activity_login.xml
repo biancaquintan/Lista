@@ -16,52 +16,52 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/tUsuario"
+        android:id="@+id/tlogin"
         android:hint="Usuário"
         android:textSize="20sp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="134dp"
+        android:layout_marginTop="122dp"
         android:textColor="@color/colorPrimaryDark"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textColorLink="@color/verde" />
+        android:textColorLink="@color/verde"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/tSenha"
+        android:id="@+id/tsenha"
         android:hint="Senha"
         android:textSize="20sp"
-        android:layout_below="@+id/tUsuario"
-        android:layout_alignStart="@+id/tUsuario"
-        android:layout_marginTop="20dp"
         android:textColor="@color/colorPrimaryDark"
-        android:textColorLink="@color/verde" />
+        android:textColorLink="@color/verde"
+        android:layout_below="@+id/tlogin"
+        android:layout_alignStart="@+id/tlogin"
+        android:layout_marginTop="32dp" />
 
     <Button
-        android:text="Entrar"
+        android:id="@+id/blogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="33dp"
-        android:id="@+id/bLogin"
-        android:textColor="@android:color/background_light"
         android:background="@color/colorPrimary"
+        android:text="Entrar"
+        android:textColor="@android:color/background_light"
         android:textStyle="normal|bold"
-        android:layout_below="@+id/tSenha"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/tsenha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp" />
 
     <Button
-        android:text="Não tenho cadastro"
+        android:id="@+id/belse"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/bElse"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:textColor="@color/verde"
-        android:layout_marginBottom="10dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:text="Não tenho cadastro"
+        android:textColor="@color/verde"
         android:textStyle="normal|bold" />
 
 </RelativeLayout>

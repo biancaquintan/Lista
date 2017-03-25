@@ -18,7 +18,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="94dp"
-        android:id="@+id/editText"
+        android:id="@+id/tlogin"
         android:hint="Usuário"
         android:textColorLink="@color/verde"
         android:textColor="@color/colorPrimaryDark" />
@@ -34,15 +34,15 @@
         android:textSize="18sp" />
 
     <Button
-        android:text="Cadastrar"
+        android:id="@+id/bcadastrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/bCadastrar"
-        android:textColor="@android:color/background_light"
-        android:backgroundTint="@color/colorPrimary"
-        android:layout_below="@+id/editText5"
+        android:layout_below="@+id/confSenha"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="43dp" />
+        android:layout_marginTop="43dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Cadastrar"
+        android:textColor="@android:color/background_light" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -50,10 +50,10 @@
         android:inputType="textPassword"
         android:ems="10"
         android:layout_marginTop="25dp"
-        android:id="@+id/editText5"
+        android:id="@+id/confSenha"
         android:hint="Confirme a senha"
-        android:layout_below="@+id/editText4"
-        android:layout_alignStart="@+id/editText4"
+        android:layout_below="@+id/tsenha"
+        android:layout_alignStart="@+id/tsenha"
         android:textColor="@color/colorPrimaryDark" />
 
     <EditText
@@ -62,9 +62,9 @@
         android:inputType="textPassword"
         android:ems="10"
         android:layout_marginTop="27dp"
-        android:id="@+id/editText4"
+        android:id="@+id/tsenha"
         android:hint="Senha"
-        android:layout_below="@+id/editText"
-        android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/tlogin"
+        android:layout_alignStart="@+id/tlogin"
         android:textColor="@color/colorPrimaryDark" />
 </RelativeLayout>

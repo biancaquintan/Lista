@@ -10,7 +10,7 @@
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay"
+        android:theme="@style/AppTheme"
         android:id="@+id/appBarLayout2">
 
     </android.support.design.widget.AppBarLayout>
@@ -22,9 +22,7 @@
         android:minHeight="?attr/actionBarSize"
         android:id="@+id/toolbar" />
 
-    <include layout="@layout/content_lista"
-        android:layout_below="@+id/appBarLayout2"
-        android:layout_alignParentStart="true" />
+    <include layout="@layout/content_lista" />
 
     <android.support.design.widget.FloatingActionButton
         android:layout_width="77dp"

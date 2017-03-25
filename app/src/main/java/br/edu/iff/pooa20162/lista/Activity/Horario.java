@@ -20,9 +20,9 @@ public class Horario extends AppCompatActivity {
 
         Button bOk = (Button) findViewById(R.id.bOk);
         bOk.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View view) {
+
                 Intent intent = new Intent(Horario.this, Lista.class);
                 startActivity(intent);
             }

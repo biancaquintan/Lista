@@ -22,14 +22,12 @@ import br.edu.iff.pooa20162.lista.R;
 
 public class Lista extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -89,5 +87,4 @@ public class Lista extends AppCompatActivity {
             }
         });
     }
-
 }

@@ -7,34 +7,63 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import br.edu.iff.pooa20162.lista.Model.Atividade;
+import br.edu.iff.pooa20162.lista.Model.Usuario;
 import br.edu.iff.pooa20162.lista.R;
 
+import static br.edu.iff.pooa20162.lista.R.id.belse;
+
 public class Login extends AppCompatActivity {
+    EditText login, senha;
+    Button belse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        List<Usuario> user = new ArrayList<>();
+        long count = Usuario.count(Usuario.class);
 
-        final EditText tUsuario = (EditText) findViewById(R.id.tUsuario);
-        final EditText tSenha = (EditText) findViewById(R.id.tSenha);
+        belse = (Button) findViewById(R.id.belse);
 
+        if(count > 0) {
+          belse.setVisibility(View.INVISIBLE);
+        }
 
-        Button bLogin = (Button) findViewById(R.id.bLogin);
-        bLogin.setOnClickListener(new View.OnClickListener() {
-
+        final Button blogin = (Button) findViewById(R.id.blogin);
+        blogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Login.this, Lista.class);
-                startActivity(intent);
+                login = (EditText) findViewById(R.id.tlogin);
+                senha = (EditText) findViewById(R.id.tsenha);
+
+                List<Usuario> user = new ArrayList<>();
+                long count = Usuario.count(Usuario.class);
+
+                if(count > 0)
+                {
+                    user = Usuario.find(Usuario.class,"login=?", String.valueOf(login.getText()));
+                    if(user == null)
+                    {
+                        Toast.makeText(getApplication(), "Usuário não cadastrado!", Toast.LENGTH_LONG).show();
+                    }
+                    else
+                    {
+                        Intent intent = new Intent(Login.this, Lista.class);
+                        startActivity(intent);
+                    }
             }
-        });
+        } });
 
-        Button bElse = (Button) findViewById(R.id.bElse);
-        bElse.setOnClickListener(new View.OnClickListener() {
-
+        Button belse = (Button) findViewById(R.id.belse);
+        belse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Login.this, Cadastro.class);
