@@ -24,7 +24,7 @@
 
     <include layout="@layout/content_lista" />
 
-    <android.support.design.widget.FloatingActionButton
+    <!--android.support.design.widget.FloatingActionButton
         android:layout_width="77dp"
         android:layout_height="77dp"
         android:clickable="true"
@@ -34,7 +34,7 @@
         app:backgroundTint="@color/verde"
         android:layout_below="@+id/appBarLayout2"
         android:layout_alignEnd="@+id/fab"
-        android:layout_marginTop="11dp" />
+        android:layout_marginTop="11dp" /-->
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

@@ -35,20 +35,20 @@ public class Lista extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Lista.this, TelaAtividade.class);
                 intent.putExtra("id", Long.valueOf(0));
-                intent.putExtra("titulo", "");
+                intent.putExtra("", "");
                 intent.putExtra("descricao", "");
                 startActivity(intent);
             }
         });
 
-        FloatingActionButton bHorario = (FloatingActionButton) findViewById(R.id.bHorario);
+        /*FloatingActionButton bHorario = (FloatingActionButton) findViewById(R.id.bHorario);
         bHorario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Lista.this, Horario.class);
                 startActivity(intent);
             }
-        });
+        });*/
     }
 
     @Override

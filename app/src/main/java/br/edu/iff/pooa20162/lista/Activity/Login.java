@@ -22,13 +22,14 @@ import static br.edu.iff.pooa20162.lista.R.id.belse;
 public class Login extends AppCompatActivity {
     EditText login, senha;
     Button belse;
+    List<Usuario> user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        List<Usuario> user = new ArrayList<>();
+        user = new ArrayList<>();
         long count = Usuario.count(Usuario.class);
 
         belse = (Button) findViewById(R.id.belse);
@@ -44,23 +45,19 @@ public class Login extends AppCompatActivity {
                 login = (EditText) findViewById(R.id.tlogin);
                 senha = (EditText) findViewById(R.id.tsenha);
 
-                List<Usuario> user = new ArrayList<>();
                 long count = Usuario.count(Usuario.class);
 
-                if(count > 0)
-                {
-                    user = Usuario.find(Usuario.class,"login=?", String.valueOf(login.getText()));
-                    if(user == null)
-                    {
+                if(count > 0) {
+                    user = Usuario.find(Usuario.class, "login=? and senha=?", String.valueOf(login.getText()), String.valueOf(senha.getText()) );
+                    if (user.isEmpty()) {
                         Toast.makeText(getApplication(), "Usuário não cadastrado!", Toast.LENGTH_LONG).show();
-                    }
-                    else
-                    {
+                    } else {
                         Intent intent = new Intent(Login.this, Lista.class);
                         startActivity(intent);
                     }
+                }
             }
-        } });
+        });
 
         Button belse = (Button) findViewById(R.id.belse);
         belse.setOnClickListener(new View.OnClickListener() {
